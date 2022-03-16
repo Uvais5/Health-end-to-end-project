@@ -20,6 +20,6 @@ def predict():
     smoker = request.form["e"]
     all = np.array([[age,sex,bmi,child,smoker]])
     output = model.predict(all)
-    return render_template("index.html", prediction_text=" Insurance Price is $ {}".format(output))
+    return render_template("index.html", prediction_text=" Health Insurance Price is $ {}".format(output))
 if __name__ == "__main__":
     app.run(debug=True)
