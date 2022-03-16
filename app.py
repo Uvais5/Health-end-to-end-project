@@ -4,7 +4,7 @@ import pickle
 import numpy as np 
 import pandas as pd
 
-model = pickle.load(open("D:/end_to_end_ML/Health_Insurance/Health.pkl","rb"))
+model = pickle.load(open("Health.pkl","rb"))
 print(model.predict([[19,1,23.22,0,1]]))
 app = Flask(__name__)
 @app.route("/")
